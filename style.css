@@ -1,0 +1,18 @@
+@import url("./components/Header/style.css");
+@import url("./components/Main/style.css");
+
+body {
+  padding: 0;
+  margin: auto;
+  font-family: Catamaran, sans-serif;
+  font-size: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  max-width: 1980px;
+  margin: auto;
+}

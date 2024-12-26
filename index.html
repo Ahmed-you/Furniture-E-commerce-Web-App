@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dept</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="header-container">
-        <div class="website-name">DEPOT</div>
-        <div class="cart">
-          CART
-          <ul class="cart-items">
-            <li class="cart-item"></li>
-          </ul>
-          <div class="price">
-            <p>price</p>
-            <p>$---</p>
+        <div class="website-name">HOMELOFT</div>
+        <div class="cart-container">
+          <div class="cart">
+            <span class="cart-text">CART</span>
+
+            <div class="cart__items__container">
+              <div class="cart__items"></div>
+              <div class="list-price">
+                <p class="title">TOTAL:</p>
+                <p class="list-price_total">$0</p>
+              </div>
+            </div>
           </div>
+          <div class="header-price">($0)</div>
         </div>
-        <div class="price">($---)</div>
       </div>
       <div class="slider">
         <img src="" alt="" />
@@ -28,12 +32,29 @@
       </div>
       <div class="products-container">
         <div class="products-header">
-          <div class="products-categories"></div>
-          <div class="pice-range"></div>
+          <div class="products-categories">
+            <span class="products-categories_all">ALL</span>
+            <span class="products-categories_vases">VASES</span>
+            <span class="products-categories_lighting">LIGHTING</span>
+            <span class="products-categories_decoration">DECORATION</span>
+            <span class="products-categories_basics">BASICS</span>
+          </div>
+          <div class="price-range-container">
+            <span class="price-range">PRICE RANGE &#11167;</span>
+            <ul class="price-range-ul">
+              <li class="all-prices">ALL</li>
+              <li class="range_0_10">$0-$10</li>
+              <li class="range_10_20">$10-$20</li>
+              <li class="range_20_30">$20-$30</li>
+              <li class="range_20_40">$30-$40</li>
+              <li class="range_40+">$40 +</li>
+            </ul>
+          </div>
         </div>
         <div class="products"></div>
       </div>
     </div>
   </body>
-  <script></script>
+  <script type="module" src="./main.js"></script>
+  <script src="./helpers/domHelpers.js"></script>
 </html>
